@@ -1,0 +1,133 @@
+body {
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    background: #969696;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background: rgb(73, 73, 73);
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 10;
+}
+
+nav h1 {
+    margin: 0;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #767373;
+    font-weight: 500;
+}
+
+.hero {
+    padding: 80px 40px;
+    text-align: center;
+    background: #8b8a8a;
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #555;
+}
+
+.hero img {
+    width: 300px;
+    border-radius: 20px;
+    margin-top: 30px;
+}
+
+.section {
+    padding: 60px 40px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.title {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.center {
+    text-align: center;
+    font-size: 17px;
+    color: #444;
+}
+
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: rgb(175, 173, 173);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    border-radius: 15px;
+}
+.btn-wa {
+    padding: 10px 15px;
+    background: #25d366;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+.floating-wa {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+}
+@media(max-width: 768px) {
+    nav { padding: 15px 20px; }
+    .hero { padding: 60px 20px; }
+    .section { padding: 40px 20px; }
+}
+.map-responsive {
+    position: relative;
+    width: 50%;
+    max-width: 100px;   /* ukuran maksimum peta */
+    height: 0;
+    padding-bottom: 50px; /* tinggi map (atur sesuai selera) */
+    margin: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-responsive iframe {
+    position: absolute;
+
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    border: 0;
+    border-radius: 5px;
+}
